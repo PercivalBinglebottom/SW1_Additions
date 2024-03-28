@@ -1,7 +1,10 @@
 # Additional EMD SW1 Models And Speedometer Fix
 
 *Credits to Kakashi Hatake for troubleshooting, and positioning of the Speedometer*
+
 *Credits also to Elijah Gooden, Jeff, Giraffe LLC for the default SW1 from which these are built*
+
+*Additional Credit to StormyKnightz666 for input on performance values*
 
 ## Installation
 
@@ -19,16 +22,20 @@
 
 ## New SW models and Specs
 
-|Model|Starting Tractive Effort (t)|Empty Weight(lbs)|Fuel Capacity(gal)|Price|
-|-----|------------------------------|------------|-------------|-----|
-|SW|50,000|180,000|600|27,098|
-|SW7|62,000|248,000|600|29,431|
-|SW9|62,000|248,000|600|29,431|
-|SW900|57,500|230,000|600|28,556|
-|SW1200|74,000|245,000|600|31,764|
+| Model | Starting Tractive Effort (lbs) | Adjusted Tractive Effort (lbs) | Empty Weight(lbs) | Fuel Capacity(gal) | Adjusted Fuel(gal) (gamified) | Price |
+| ----- |------------------------------- | ------------------------------ |------------------ | ------------------ | ----------------------------- | ----- |
+|SW|50,000|55,000|180,000|600|600|27,098|
+|SW900|57,500|63,000|230,000|600|600|29,625|
+|SW7|62,000|73,000|248,000|600|600|31,472|
+|SW9|62,000|75,000|248,000|600|600|31,958|
+|SW1200|74,000|84,000|245,000|600|900|31,764|
+|SW1500|62,000|100,800|248,000|600|1200|36975|
 
 These models all shared a similar bonnet style and therefore we can *cheat* by using the SW1 in game model to get more variants.
 I do not have modelling experience and am not skilled enough in modelling to make new SWs (as much as I'd like to) that have a different physical model.
+
+### Why do we have "Adjusted Tractive Effort and Adjusted Fuel?"
+I changed the starting Tractive Effort Values to better reflect performance based on advice from an SW9/SW1200 driver. The 1200 was underperforming and we can't adjust horsepower as part of the performance calculations. After some testing we've adjusted the TE to act in place of the Horsepower values until a better solution presents. We adjusted fuel for the top 2 tiered locomotives because, lets face it... Are you going to buy the SW1200 if the GP carries twice the fuel and most of the same power? Somethings just need to be gamified. Better bang for the buck so to speak.
 
 ## GIRAFFE LLC Modding Policy
 
