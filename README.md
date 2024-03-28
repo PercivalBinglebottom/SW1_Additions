@@ -31,6 +31,9 @@
 These models all shared a similar bonnet style and therefore we can *cheat* by using the SW1 in game model to get more variants.
 I do not have modelling experience and am not skilled enough in modelling to make new SWs (as much as I'd like to) that have a different physical model.
 
+### Why do we have "Adjusted Tractive Effort and Adjusted Fuel?"
+I changed the starting Tractive Effort Values to better reflect performance based on advice from an SW9/SW1200 driver. The 1200 was underperforming and we can't adjust horsepower as part of the performance calculations. After some testing we've adjusted the TE to act in place of the Horsepower values until a better solution presents. We adjusted fuel for the top 2 tiered locomotives because, lets face it... Are you going to buy the SW1200 if the GP carries twice the fuel and most of the same power? Somethings just need to be gamified. Better bang for the buck so to speak.
+
 ## GIRAFFE LLC Modding Policy
 
 This is the license that Giraffe gives to us in their Discord server:
