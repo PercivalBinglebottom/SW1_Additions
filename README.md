@@ -19,13 +19,14 @@
 
 ## New SW models and Specs
 
-|Model|Starting Tractive Effort (t)|Empty Weight(lbs)|Fuel Capacity(gal)|Price|
-|-----|------------------------------|------------|-------------|-----|
-|SW|50,000|180,000|600|27,098|
-|SW7|62,000|248,000|600|29,431|
-|SW9|62,000|248,000|600|29,431|
-|SW900|57,500|230,000|600|28,556|
-|SW1200|74,000|245,000|600|31,764|
+|Model|Starting Tractive Effort (lbs)|Adjusted Tractive Effort (lbs)|Empty Weight(lbs)|Fuel Capacity(gal)|Adjusted Fuel(gal) (gamified)|Price|
+|-----|----------------------------|----------------------------|-----------------|-----|-----|
+|SW|50,000|55,000|180,000|600|600|27,098|
+|SW900|57,500|63,000|230,000|600|600|29,625|
+|SW7|62,000|73,000|248,000|600|600|31,472|
+|SW9|62,000|75,000|248,000|600|600|31,958|
+|SW1200|74,000|84,000|245,000|600|900|31,764|
+|SW1500|62,000|100,800|248,000|600|1200|36975|
 
 These models all shared a similar bonnet style and therefore we can *cheat* by using the SW1 in game model to get more variants.
 I do not have modelling experience and am not skilled enough in modelling to make new SWs (as much as I'd like to) that have a different physical model.

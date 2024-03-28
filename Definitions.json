@@ -2615,12 +2615,12 @@
       },
       "definition": {
         "kind": "DieselLocomotive",
-        "startingTractiveEffort": 62000,
+        "startingTractiveEffort": 73000,
         "modelIdentifier": "emd-sw1",
         "carType": "LD",
         "archetype": "LocomotiveDiesel",
         "visibleInPlacer": true,
-        "basePrice": 29431,
+        "basePrice": 31472,
         "baseRoadNumber": "1200",
         "weightEmpty": 248000,
         "truckIdentifier": "truck.aar.a",
@@ -3916,12 +3916,12 @@
       },
       "definition": {
         "kind": "DieselLocomotive",
-        "startingTractiveEffort": 62000,
+        "startingTractiveEffort": 75000,
         "modelIdentifier": "emd-sw1",
         "carType": "LD",
         "archetype": "LocomotiveDiesel",
         "visibleInPlacer": true,
-        "basePrice": 29431,
+        "basePrice": 31958,
         "baseRoadNumber": "1200",
         "weightEmpty": 248000,
         "truckIdentifier": "truck.aar.a",
@@ -5217,12 +5217,12 @@
       },
       "definition": {
         "kind": "DieselLocomotive",
-        "startingTractiveEffort": 57500,
+        "startingTractiveEffort": 63000,
         "modelIdentifier": "emd-sw1",
         "carType": "LD",
         "archetype": "LocomotiveDiesel",
         "visibleInPlacer": true,
-        "basePrice": 28556,
+        "basePrice": 29625,
         "baseRoadNumber": "1200",
         "weightEmpty": 230000,
         "truckIdentifier": "truck.aar.a",
@@ -6518,18 +6518,1319 @@
       },
       "definition": {
         "kind": "DieselLocomotive",
-        "startingTractiveEffort": 74000,
+        "startingTractiveEffort": 84000,
         "modelIdentifier": "emd-sw1",
         "carType": "LD",
         "archetype": "LocomotiveDiesel",
         "visibleInPlacer": true,
-        "basePrice": 31764,
+        "basePrice": 33708,
         "baseRoadNumber": "1200",
         "weightEmpty": 245000,
         "truckIdentifier": "truck.aar.a",
         "loadSlots": [
           {
-            "maximumCapacity": 600.0,
+            "maximumCapacity": 900.0,
+            "loadUnits": "Gallons",
+            "requiredLoadIdentifier": "diesel-fuel"
+          }
+        ],
+        "truckSeparation": 6.51574,
+        "length": 12.486,
+        "couplerHeight": 0.748,
+        "airHosePosition": [
+          -0.345,
+          0.877,
+          0.1
+        ],
+        "brakeAnimations": [],
+        "minimumCurveRadius": "ExtraSmall",
+        "components": [
+            {
+                "kind": "Gauge",
+                "style": "Speedometer100",
+                "name": "Speedo",
+                "transform": {
+                  "position": [
+                    1.104083059,
+                    2.984878,
+                    -2.248491
+                  ],
+                  "rotation": [
+                    0,
+                    1,
+                    0.13333,
+                    0
+                  ],
+                  "scale": [
+                    0.48,
+                    0.48,
+                    1.0
+                  ]
+                },
+                "parent": null,
+                "enabled": true
+              },
+            {
+            "kind": "Ladder",
+            "height": 1.0,
+            "name": "Front Right Ladder",
+            "transform": {
+              "position": [
+                1.5087502,
+                0.210021988,
+                5.74100876
+              ],
+              "rotation": [
+                -5.638486E-09,
+                0.7071068,
+                -1.74417245E-08,
+                0.707106948
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Ladder",
+            "height": 1.0,
+            "name": "Front Left Ladder",
+            "transform": {
+              "position": [
+                -1.50875,
+                0.210022,
+                5.741009
+              ],
+              "rotation": [
+                1.74417227E-08,
+                -0.707106769,
+                -5.63848523E-09,
+                0.707106769
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Ladder",
+            "height": 1.0,
+            "name": "Rear Right Ladder",
+            "transform": {
+              "position": [
+                1.50875,
+                0.210022,
+                -5.741009
+              ],
+              "rotation": [
+                -5.638486E-09,
+                0.7071068,
+                -1.74417245E-08,
+                0.707106948
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Ladder",
+            "height": 1.0,
+            "name": "Rear Left Ladder",
+            "transform": {
+              "position": [
+                -1.50875,
+                0.210022,
+                -5.741009
+              ],
+              "rotation": [
+                1.74417227E-08,
+                -0.707106769,
+                -5.63848523E-09,
+                0.707106769
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "ToggleAnimation",
+            "animation": {
+              "clipName": "Back Door"
+            },
+            "speed": 0.6,
+            "key": "door.back",
+            "targetColliderObject": {
+              "path": [
+                "emd-sw1",
+                "Back Door",
+                "Bone",
+                "engine door hinges.002"
+              ]
+            },
+            "title": "Door",
+            "messageTrue": "Click to Close",
+            "messageFalse": "Click to Open",
+            "name": "Rear Door",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "ToggleAnimation",
+            "animation": {
+              "clipName": "Front Door"
+            },
+            "speed": 0.6,
+            "key": "door.front",
+            "targetColliderObject": {
+              "path": [
+                "emd-sw1",
+                "Front Door",
+                "Bone",
+                "cab side door"
+              ]
+            },
+            "title": "Door",
+            "messageTrue": "Click to Close",
+            "messageFalse": "Click to Open",
+            "name": "Front Door",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "DieselExhaust",
+            "name": "DieselExhaust",
+            "transform": {
+              "position": [
+                3.570817E-05,
+                4.36181641,
+                -0.381157845
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "ToggleAnimation",
+            "animation": {
+              "clipName": "Front Right Window"
+            },
+            "speed": 0.5,
+            "key": "frw",
+            "targetColliderObject": {
+              "path": [
+                "emd-sw1",
+                "Front Right Window",
+                "Bone",
+                "windowframe.005"
+              ]
+            },
+            "title": "Window",
+            "messageTrue": "Click to Close",
+            "messageFalse": "Click to Open",
+            "name": "Front Right Window",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "ToggleAnimation",
+            "animation": {
+              "clipName": "Rear Right Window"
+            },
+            "speed": 0.5,
+            "key": "rrw",
+            "targetColliderObject": {
+              "path": [
+                "emd-sw1",
+                "Rear Right Window",
+                "Bone",
+                "windowframe.004"
+              ]
+            },
+            "title": "Window",
+            "messageTrue": "Click to Close",
+            "messageFalse": "Click to Open",
+            "name": "Rear Right Window",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "ToggleAnimation",
+            "animation": {
+              "clipName": "Front Left Window"
+            },
+            "speed": 0.5,
+            "key": "flw",
+            "targetColliderObject": {
+              "path": [
+                "emd-sw1",
+                "Front Left Window",
+                "Bone",
+                "windowframe.003"
+              ]
+            },
+            "title": "Window",
+            "messageTrue": "Click to Close",
+            "messageFalse": "Click to Open",
+            "name": "Front Left Window",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "ToggleAnimation",
+            "animation": {
+              "clipName": "Rear Left Window"
+            },
+            "speed": 0.5,
+            "key": "rlw",
+            "targetColliderObject": {
+              "path": [
+                "emd-sw1",
+                "Rear Left Window",
+                "Bone",
+                "windowframe.002"
+              ]
+            },
+            "title": "Window",
+            "messageTrue": "Click to Close",
+            "messageFalse": "Click to Open",
+            "name": "Rear Left Window",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Horn",
+            "defaultHornIdentifier": "",
+            "name": "Horn",
+            "transform": {
+              "position": [
+                -0.00239475677,
+                4.420349,
+                -1.81686532
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Bell",
+            "animation": {
+              "clipName": "Bell"
+            },
+            "name": "Bell",
+            "transform": {
+              "position": [
+                1.905023E-05,
+                3.67382813,
+                3.96707821
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Compressor",
+            "animation": null,
+            "style": 1,
+            "name": "Compressor",
+            "transform": {
+              "position": [
+                -4.32264751E-05,
+                1.857544,
+                2.355735
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Seat",
+            "name": "Engineer Seat",
+            "transform": {
+              "position": [
+                1.09568,
+                2.48702,
+                -3.14902
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Seat",
+            "name": "Conductor Seat",
+            "transform": {
+              "position": [
+                -1.12240016,
+                2.51159668,
+                -2.875963
+              ],
+              "rotation": [
+                -6.73055334E-10,
+                0.707106769,
+                -1.12160692E-09,
+                0.7071068
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Seat",
+            "name": "Brakeman Seat ",
+            "transform": {
+              "position": [
+                -1.03390384,
+                2.51159668,
+                -3.3754127
+              ],
+              "rotation": [
+                -6.73055334E-10,
+                0.707106769,
+                -1.12160692E-09,
+                0.7071068
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "LightFixture",
+            "key": "step.light",
+            "name": "Steplight 1",
+            "transform": {
+              "position": [
+                1.37787,
+                1.03615,
+                2.727
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": false
+          },
+          {
+            "kind": "Headlight",
+            "forward": true,
+            "lightEnabled": true,
+            "name": "Headlight 1",
+            "transform": {
+              "position": [
+                -0.0931951553,
+                3.19030762,
+                4.729314
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.37,
+                0.37,
+                0.15
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Headlight",
+            "forward": true,
+            "lightEnabled": false,
+            "name": "Headlight 2",
+            "transform": {
+              "position": [
+                0.09319516,
+                3.190308,
+                4.729314
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                0.37,
+                0.37,
+                0.15
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Headlight",
+            "forward": false,
+            "lightEnabled": true,
+            "name": "Rearlight 1",
+            "transform": {
+              "position": [
+                0.09319812,
+                3.980835,
+                -4.48311
+              ],
+              "rotation": [
+                3.17173982E-10,
+                1.00000012,
+                -1.269018E-09,
+                -1.48007331E-08
+              ],
+              "scale": [
+                0.37,
+                0.37,
+                0.15
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Headlight",
+            "forward": false,
+            "lightEnabled": false,
+            "name": "Rearlight 2",
+            "transform": {
+              "position": [
+                -0.09319812,
+                3.980835,
+                -4.48311
+              ],
+              "rotation": [
+                3.17173982E-10,
+                1.00000012,
+                -1.269018E-09,
+                -1.48007331E-08
+              ],
+              "scale": [
+                0.37,
+                0.37,
+                0.15
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "RadialControl",
+            "animation": {
+              "clipName": "Horn"
+            },
+            "purpose": "Whistle",
+            "displayName": "Horn",
+            "radius": 1.113,
+            "rotationDegrees": -11.0,
+            "momentary": true,
+            "homePosition": 0.0,
+            "collider": {
+              "kind": "Capsule",
+              "axis": 0,
+              "center": [
+                -0.8600002,
+                -0.837,
+                0.522
+              ],
+              "radius": 0.024,
+              "height": 0.116
+            },
+            "name": "Horn Cord",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.49999997,
+                0.49999997,
+                0.49999997,
+                0.49999997
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": {
+              "path": [
+                "emd-sw1",
+                "Horn",
+                "Horn Lever",
+                "12"
+              ]
+            },
+            "enabled": true
+          },
+          {
+            "kind": "RadialControl",
+            "animation": {
+              "clipName": "Cut In Cut Out"
+            },
+            "purpose": "TrainBrakeCutOut",
+            "displayName": "Brake Stand Cutout",
+            "radius": 0.4,
+            "rotationDegrees": 25.0,
+            "momentary": false,
+            "homePosition": 0.0,
+            "collider": {
+              "kind": "Capsule",
+              "axis": 2,
+              "center": [
+                0.087,
+                0.0,
+                0.012
+              ],
+              "radius": 0.012,
+              "height": 0.04399998
+            },
+            "name": "Cut-In",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.707106769,
+                0.0,
+                0.0,
+                0.707106769
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": {
+              "path": [
+                "emd-sw1",
+                "6sl Brake Stand",
+                "Cut in Cut Out",
+                "Bone",
+                "6sl Brake Stand.001"
+              ]
+            },
+            "enabled": true
+          },
+          {
+            "kind": "RadialControl",
+            "animation": {
+              "clipName": "Independent Brake"
+            },
+            "purpose": "LocomotiveBrake",
+            "displayName": "Independent Brake",
+            "radius": 0.05200001,
+            "rotationDegrees": -60.0,
+            "momentary": false,
+            "homePosition": 0.0,
+            "collider": {
+              "kind": "Capsule",
+              "axis": 0,
+              "center": [
+                0.061,
+                0.0,
+                -0.01
+              ],
+              "radius": 0.015,
+              "height": 0.1070002
+            },
+            "name": "Independent Brake",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                -0.953716934,
+                0.30070582
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": {
+              "path": [
+                "emd-sw1",
+                "6sl Brake Stand",
+                "Independent Brake",
+                "Bone",
+                "Bone.001",
+                "Cube.060"
+              ]
+            },
+            "enabled": true
+          },
+          {
+            "kind": "RadialControl",
+            "animation": {
+              "clipName": "Reverser"
+            },
+            "purpose": "Reverser",
+            "displayName": "Reverser",
+            "radius": 0.3,
+            "rotationDegrees": -45.0,
+            "momentary": false,
+            "homePosition": 0.0,
+            "collider": {
+              "kind": "Capsule",
+              "axis": 0,
+              "center": [
+                0.324,
+                0.0,
+                0.004000001
+              ],
+              "radius": 0.02,
+              "height": 0.1070002
+            },
+            "name": "Reverser",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.21643962,
+                0.976296
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": {
+              "path": [
+                "emd-sw1",
+                "Reverser",
+                "Bone",
+                "Cylinder.006"
+              ]
+            },
+            "enabled": true
+          },
+          {
+            "kind": "RadialControl",
+            "animation": {
+              "clipName": "Lever 2"
+            },
+            "purpose": "Bell",
+            "displayName": "Bell",
+            "radius": -0.053,
+            "rotationDegrees": -90.0,
+            "momentary": false,
+            "homePosition": 0.0,
+            "collider": {
+              "kind": "Capsule",
+              "axis": 0,
+              "center": [
+                0.06499998,
+                0.0,
+                1.164153E-09
+              ],
+              "radius": 0.012,
+              "height": 0.05300017
+            },
+            "name": "Bell",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.9396926,
+                0.342020154
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": {
+              "path": [
+                "emd-sw1",
+                "6sl Brake Stand",
+                "Lever 2"
+              ]
+            },
+            "enabled": true
+          },
+          {
+            "kind": "RadialControl",
+            "animation": {
+              "clipName": "Throttle"
+            },
+            "purpose": "Throttle",
+            "displayName": "Throttle",
+            "radius": 0.235,
+            "rotationDegrees": 86.0,
+            "momentary": false,
+            "homePosition": 0.0,
+            "collider": {
+              "kind": "Capsule",
+              "axis": 0,
+              "center": [
+                -0.305,
+                0.0,
+                1.164153E-09
+              ],
+              "radius": 0.028,
+              "height": 0.1460002
+            },
+            "name": "Throttle",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.886490464,
+                0.4627468
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": {
+              "path": [
+                "emd-sw1",
+                "Throttle",
+                "Bone",
+                "Cylinder.005"
+              ]
+            },
+            "enabled": true
+          },
+          {
+            "kind": "RadialControl",
+            "animation": {
+              "clipName": "Train Brake"
+            },
+            "purpose": "TrainBrake",
+            "displayName": "Train Brake",
+            "radius": 0.107,
+            "rotationDegrees": -90.0,
+            "momentary": false,
+            "homePosition": 0.0,
+            "collider": {
+              "kind": "Capsule",
+              "axis": 0,
+              "center": [
+                0.136,
+                0.0,
+                1.396984E-09
+              ],
+              "radius": 0.015,
+              "height": 0.1070002
+            },
+            "name": "Train Brake",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.8433915,
+                0.5372996
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": {
+              "path": [
+                "emd-sw1",
+                "6sl Brake Stand",
+                "Train Brake",
+                "Cylinder.058"
+              ]
+            },
+            "enabled": true
+          },
+          {
+            "kind": "Gauge",
+            "style": "DualBrakeCylinderLine",
+            "name": "DBCL",
+            "transform": {
+              "position": [
+                0.419083059,
+                2.874878,
+                -2.142491
+              ],
+              "rotation": [
+                -1.72984585E-10,
+                1.00000012,
+                -3.62187669E-10,
+                -1.4720186E-08
+              ],
+              "scale": [
+                0.75,
+                0.75,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Gauge",
+            "style": "DualReservoirMainEq",
+            "name": "DRME",
+            "transform": {
+              "position": [
+                0.619173,
+                2.874878,
+                -2.142491
+              ],
+              "rotation": [
+                -1.72984585E-10,
+                1.00000012,
+                -3.62187669E-10,
+                -1.4720186E-08
+              ],
+              "scale": [
+                0.75,
+                0.75,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Colorizer",
+            "hexColors": [
+              "#48141b",
+              "#cf9d2a",
+              "#2578d0",
+              "#0C0C0C",
+              "#002B00",
+              "#FA0005"
+            ],
+            "material": {
+              "materialName": "Colorable"
+            },
+            "name": "Colorizer",
+            "transform": {
+              "position": [
+                0.0,
+                0.0,
+                0.0
+              ],
+              "rotation": [
+                0.0,
+                0.0,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Decal",
+            "size": [
+              5.25,
+              0.8,
+              0.25
+            ],
+            "content": "Lettering",
+            "name": "Lettering Decal Right",
+            "transform": {
+              "position": [
+                1.04750085,
+                2.2598877,
+                1.22892308
+              ],
+              "rotation": [
+                -9.175724E-19,
+                0.707106769,
+                1.9495178E-17,
+                -0.707106769
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Decal",
+            "size": [
+              5.25,
+              0.8,
+              0.25
+            ],
+            "content": "Lettering",
+            "name": "Lettering Decal Left",
+            "transform": {
+              "position": [
+                -1.047501,
+                2.259888,
+                1.228923
+              ],
+              "rotation": [
+                -1.9495178E-17,
+                0.707106769,
+                -9.175724E-19,
+                0.707106769
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Decal",
+            "size": [
+              1.0,
+              0.7,
+              0.02
+            ],
+            "content": "RoadNumber",
+            "name": "Road Number Decal Right",
+            "transform": {
+              "position": [
+                1.49367344,
+                2.45800781,
+                -3.06279254
+              ],
+              "rotation": [
+                1.10156229E-17,
+                0.707106769,
+                9.97373354E-18,
+                -0.707106769
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "Decal",
+            "size": [
+              1.0,
+              0.7,
+              0.02
+            ],
+            "content": "RoadNumber",
+            "name": "Road Number Decal Left",
+            "transform": {
+              "position": [
+                -1.493673,
+                2.458008,
+                -3.062793
+              ],
+              "rotation": [
+                -9.973736E-18,
+                0.707106769,
+                1.10156263E-17,
+                0.707106769
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          },
+          {
+            "kind": "LoadTarget",
+            "radius": 1.0,
+            "slotIndex": 0,
+            "name": "LoadTarget",
+            "transform": {
+              "position": [
+                -2.41100788E-05,
+                0.994873047,
+                1.07948208
+              ],
+              "rotation": [
+                0.0,
+                -2.98023224E-08,
+                0.0,
+                1.0
+              ],
+              "scale": [
+                1.0,
+                1.0,
+                1.0
+              ]
+            },
+            "parent": null,
+            "enabled": true
+          }
+        ]
+      }
+    },
+    {
+      "identifier": "ld-sw1500",
+      "metadata": {
+        "name": "EMD SW1500",
+        "description": "Switcher Diesel Locomotive",
+        "tags": [
+          "Diesel",
+          "Switcher"
+        ],
+        "credits": "Elijah Gooden, Jeff"
+      },
+      "definition": {
+        "kind": "DieselLocomotive",
+        "startingTractiveEffort": 100800,
+        "modelIdentifier": "emd-sw1",
+        "carType": "LD",
+        "archetype": "LocomotiveDiesel",
+        "visibleInPlacer": true,
+        "basePrice": 36975,
+        "baseRoadNumber": "1200",
+        "weightEmpty": 248000,
+        "truckIdentifier": "truck.aar.a",
+        "loadSlots": [
+          {
+            "maximumCapacity": 1200.0,
             "loadUnits": "Gallons",
             "requiredLoadIdentifier": "diesel-fuel"
           }
