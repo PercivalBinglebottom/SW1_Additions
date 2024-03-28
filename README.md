@@ -1,7 +1,10 @@
 # Additional EMD SW1 Models And Speedometer Fix
 
 *Credits to Kakashi Hatake for troubleshooting, and positioning of the Speedometer*
+
 *Credits also to Elijah Gooden, Jeff, Giraffe LLC for the default SW1 from which these are built*
+
+*Additional Credit to StormyKnightz666 for input on performance values*
 
 ## Installation
 
