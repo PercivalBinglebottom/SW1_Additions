@@ -19,8 +19,8 @@
 
 ## New SW models and Specs
 
-|Model|Starting Tractive Effort (lbs)|Adjusted Tractive Effort (lbs)|Empty Weight(lbs)|Fuel Capacity(gal)|Adjusted Fuel(gal) (gamified)|Price|
-|-----|----------------------------|----------------------------|-----------------|-----|-----|
+| Model | Starting Tractive Effort (lbs) | Adjusted Tractive Effort (lbs) | Empty Weight(lbs) | Fuel Capacity(gal) | Adjusted Fuel(gal) (gamified) | Price |
+| ----- |------------------------------- | ------------------------------ |------------------ | ------------------ | ----------------------------- | ----- |
 |SW|50,000|55,000|180,000|600|600|27,098|
 |SW900|57,500|63,000|230,000|600|600|29,625|
 |SW7|62,000|73,000|248,000|600|600|31,472|
